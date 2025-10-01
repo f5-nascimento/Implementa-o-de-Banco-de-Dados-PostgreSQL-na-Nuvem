@@ -16,36 +16,36 @@ As etapas do desafio incluem:
 ---
 
 ### 1. Criação do Banco de Dados
-- Criar um banco chamado **dev-seunome**, onde `seunome` é substituído pelo nome do aluno.
+- Criar um banco chamado **col-seunome**, onde `seunome` é substituído pelo nome do aluno.
 - Conectar o banco ao **DBeaver** para gerenciar e executar os scripts.
 
 ---
 
-### 2. Criação da Tabela `clientes`
-Criar uma tabela chamada **clientes** com os seguintes campos:
-- id INT, cpf VARCHAR(18), nome VARCHAR(45), endereco VARCHAR(45), telefone VARCHAR(45), email VARCHAR(45), uf CHAR(2)
+### 2. Criação da Tabela `alunos`
+Criar uma tabela chamada **alunos** com os seguintes campos:
+- id INT, cpf VARCHAR(18), nome VARCHAR(80), endereco VARCHAR(80), telefone VARCHAR(20), email VARCHAR(20), uf CHAR(2)
 - Todos os campos devem ser **NOT NULL**.  
-- O campo **id_cliente** deve ser a **chave primária**.  
-- Os campos devem seguir o padrão **nomedocampo_nomedatabela** (ex.: `id_cliente`).
+- O campo **id** deve ser a **chave primária**.  
+- Os campos devem seguir o padrão **nomedocampo_nomedatabela** (ex.: `id_aluno`).
 
 ---
 
 ### 3. Manipulação de Dados
-- Criar um **INSERT** com **155 registros** (os dados podem ser gerados com auxílio de uma IA generativa).  
-- Atualizar o campo `uf_cliente` de todos os registros com `id_cliente > 100` para **PE**.  
-- Excluir todos os registros com `id_cliente > 150`.  
+- Criar um **INSERT** com **100 registros** (os dados podem ser gerados com auxílio de uma IA generativa).  
+- Atualizar o campo `uf_aluno` de todos os registros com `id_aluno > 70` para **SC**.  
+- Excluir todos os registros com `id_aluno > 90`.  
 
 ---
 
 ### 4. Consultas
-- Realizar uma consulta que exiba os nomes de todos os clientes cujo `nome_cliente` começa com a letra **B**.  
-- Criar uma **VIEW** chamada `relatorio` que execute essa consulta.  
+- Realizar uma consulta que exiba os nomes de todos os alunos cujo `nome_aluno` começa com a letra **F**.  
+- Criar uma **VIEW** chamada `pesquisa` que execute essa consulta.  
 
 ---
 
 ### 5. Gerenciamento de Usuários
-- Criar o usuário **felnascimento** com senha **12345**.  
-- Conceder permissão ao usuário **felnascimento** para executar a **view relatorio**.  
+- Criar o usuário **felippe** com senha **54321**.  
+- Conceder permissão ao usuário **felippe** para executar a **view pesquisa**.  
 
 ---
 
@@ -57,12 +57,12 @@ Os alunos deverão enviar:
 ---
 
 ## Resultados Esperados
-- Banco de dados **dev-seunome** corretamente criado e acessível pelo Render e DBeaver.  
-- Tabela **clientes** criada conforme as especificações, respeitando o padrão de nomenclatura.  
-- Inserção em massa de **155 registros** concluída com sucesso.  
-- Atualização correta do campo `uf_cliente` para registros com `id_cliente > 100`.  
-- Exclusão de registros com `id_cliente > 150` realizada corretamente.  
-- Consulta que retorna os clientes cujo nome começa com **B** implementada com sucesso.  
-- **View relatorio** criada corretamente a partir da consulta.  
-- Usuário **felnascimento** criado com senha definida e permissões de execução atribuídas à view.  
+- Banco de dados **col-seunome** corretamente criado e acessível pelo Render e DBeaver.  
+- Tabela **aluno** criada conforme as especificações, respeitando o padrão de nomenclatura.  
+- Inserção em massa de **100 registros** concluída com sucesso.  
+- Atualização correta do campo `uf_aluno` para registros com `id_aluno > 70`.  
+- Exclusão de registros com `id_aluno > 90` realizada corretamente.  
+- Consulta que retorna os alunos cujo nome começa com **F** implementada com sucesso.  
+- **View pesquisa** criada corretamente a partir da consulta.  
+- Usuário **felippe** criado com senha definida e permissões de execução atribuídas à view.  
 - Scripts, host e nome do banco entregues dentro do prazo estabelecido.  
